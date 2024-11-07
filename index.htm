@@ -1,57 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        body {
-            background: #031325;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .spinner {
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        .spinner:after {
-            animation: changeContent .8s linear infinite;
-            display: block;
-            content: "⠋";
-            font-size: 80px;
-        }
-
-        @keyframes changeContent {
-            10% { content: "⠙"; }
-            20% { content: "⠹"; }
-            30% { content: "⠸"; }
-            40% { content: "⠼"; }
-            50% { content: "⠴"; }
-            60% { content: "⠦"; }
-            70% { content: "⠧"; }
-            80% { content: "⠇"; }
-            90% { content: "⠏"; }
-        }
-    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/img/title_logo.png" type="image/icon type" style="width: 30px; height: 25px;">
+        <title>Loading..</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="loading-container">
+            <div class="loading-text">
+              <span>L</span>
+              <span>O</span>
+              <span>A</span>
+              <span>D</span>
+              <span>I</span>
+              <span>N</span>
+              <span>G</span>
+            </div>
+          </div>
+    </body>
     <script>
         setTimeout(function(){
-            window.location.href = "main_page.htm";
-         }, 3000);
+            window.location.href = "./main_page.htm";
+        }, 5000);
     </script>
-</head>
-<body>
-    <div class="spinner"></div>
-    <div class="spinner">
-        <h2 style="padding: 25px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">LOADING...</h2>
-    </div>
-</body>
 </html>
